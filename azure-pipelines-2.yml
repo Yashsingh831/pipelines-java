@@ -2,6 +2,19 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
+variables:
+
+  # Azure Resource Manager connection created during pipeline creation
+  azureSubscription: 'cddaaf17-4f2d-4b3a-a372-6778a1d7b78d'
+
+  # Web app name
+  webAppName: 'newyaml'
+
+  # Environment name
+  environmentName: 'newyaml'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
 
 trigger:
 - main
